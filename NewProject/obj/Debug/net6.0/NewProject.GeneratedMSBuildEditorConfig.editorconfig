@@ -8,37 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NewProject
 build_property.RootNamespace = NewProject
-build_property.ProjectDir = C:\Users\МейрамА\source\repos\NewProject\NewProject\
+build_property.ProjectDir = C:\Users\Adil\Source\Repos\NewProject\NewProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\МейрамА\source\repos\NewProject\NewProject
+build_property.MSBuildProjectDirectory = C:\Users\Adil\Source\Repos\NewProject\NewProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/Home/Index.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Category/ProductsByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcUHJvZHVjdHNCeUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/Home/Privacy.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/Shared/Error.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Product/Buy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxCdXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/_ViewImports.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/_ViewStart.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/МейрамА/source/repos/NewProject/NewProject/Views/Shared/_Layout.cshtml]
+[C:/Users/Adil/Source/Repos/NewProject/NewProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cqx00i1mzr

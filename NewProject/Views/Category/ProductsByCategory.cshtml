@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Product>
+@{
+}
+<html>
+<body>
+    <h2>Products from the @*@ViewBag.Category.CategoryName*@ category</h2>
+    <table>
+        <tr>
+            <td>Product name    </td>
+            <td>Price   </td>
+            <td>Category id   </td>
+            <td></td>
+        </tr>
+        @foreach (var p in Model)
+        {
+            @if (p.CategoryId == ViewBag.CategoryId)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@p.Price</td>
+                    <td>@p.CategoryId</td>
+                    <td><a href="~/Product/Buy/@p.Id">Buy</a></td>
+                </tr>
+            }
+        }
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Category>
+@{
+}
+<html>
+<body>
+    <h2>All categories</h2>
+    <table>
+        <tr>
+            <td>Category name</td>
+            <td></td>
+        </tr>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.CategoryName</td>
+                <td><a href="~/Category/ProductsByCategory/@c.Id">Products</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

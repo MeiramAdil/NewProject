@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using NewProject;
 using NewProject.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,5 +33,6 @@ app.MapControllerRoute(
 var services = app.Services.CreateScope().ServiceProvider;
 var context = services.GetRequiredService<MobileContext>();
 SampleData.InitializeCategory(context);
+SampleData.InitializeProducts(context);
 
 app.Run();
