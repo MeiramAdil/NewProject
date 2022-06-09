@@ -2,26 +2,28 @@
 @{
 }
 <html>
-    <body>
-        <h2>All products</h2>
-        <table>
+<body>
+    <h2>All products</h2>
+    <table>
+        <tr>
+            <td>Product name</td>
+            <td>Price</td>
+            <td>Category id</td>
+            <td></td>
+        </tr>
+        @foreach (var p in Model)
+        {
             <tr>
-                <td>Product name</td>
-                <td>Price</td>
-                <td>Category id</td>
-                <td></td>
+                <td><a asp-action="Update" asp-route-id="@p.Id">@p.Name</a></td>
+                <td>@p.Price</td>
+                <td>@p.CategoryId</td>
+                <td><a asp-action="Buy" class="btn btn-outline-danger" asp-route-id="@p.Id">Buy</a></td>
+                <td><a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@p.Id">Delete</a></td>
             </tr>
-            @foreach(var p in Model){
-                <tr>
-                    <td><a href="~/Product/Update/@p.Id">@p.Name</a> </td>
-                    <td>@p.Price</td>
-                    <td>@p.CategoryId</td>
-                    <td><a href="~/Product/Buy/@p.Id">Buy</a></td>
-                </tr>
-            }
-        </table>
-        <br/>
-        <br/>
-        <a href="~/Product/Add/">Добавить новый продукт</a>
-    </body>
+        }
+    </table>
+    <br />
+    <br />
+    <a asp-action="Add" class="btn btn-outline-danger">Add</a>
+</body>
 </html>

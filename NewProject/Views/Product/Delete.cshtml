@@ -1,0 +1,16 @@
+﻿@model int
+@{
+
+}
+<html>
+    <body>
+        <div>
+            <form method="post">
+                <h2>Вы действительно хотите удалить этот продукт?</h2>
+                <input type="hidden" value="@Model" name="id"/>
+                <input type="submit" value="Подтвердить" />
+            @*                @Html.ActionLink("Delete", new int Id = @ViewBag.ProductId)*@
+            </form>
+        </div>
+    </body>
+</html>

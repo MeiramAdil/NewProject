@@ -16,13 +16,17 @@
             @if (p.CategoryId == ViewBag.CategoryId)
             {
                 <tr>
-                    <td>@p.Name</td>
+                    <td><a asp-action="Update" asp-route-id="@p.Id">@p.Name</a></td>
                     <td>@p.Price</td>
                     <td>@p.CategoryId</td>
-                    <td><a href="~/Product/Buy/@p.Id">Buy</a></td>
+                    <td><a asp-action="Buy" class="btn btn-outline-danger" asp-route-id="@p.Id">Buy</a></td>
+                    <td><a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@p.Id">Delete</a></td>
                 </tr>
             }
         }
     </table>
+     <br />
+    <br />
+    <a asp-action="Add" class="btn btn-outline-danger">Add</a>
 </body>
 </html>

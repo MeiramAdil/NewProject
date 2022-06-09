@@ -11,7 +11,7 @@ using NewProject.Data;
 namespace NewProject.Migrations
 {
     [DbContext(typeof(MobileContext))]
-    [Migration("20220608061203_InitMgri")]
+    [Migration("20220609152326_InitMgri")]
     partial class InitMgri
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

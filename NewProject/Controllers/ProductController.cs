@@ -14,7 +14,7 @@ namespace NewProject.Controllers
     }
     public IActionResult Index()
     {
-      var products = _db.Products;
+      var products = _db.Products.ToList();
       return View(products);
     }
 
@@ -37,20 +37,24 @@ namespace NewProject.Controllers
     [HttpGet]
     public IActionResult Update(int id)
     {
-      var p = _db.Products.Where(x => x.Id == id).FirstOrDefault();
-      return View(p);
+      if (id != 0)
+      {
+        var p = _db.Products.Where(x => x.Id == id).FirstOrDefault();
+        return View(p);
+      }
+      else return NotFound("Похоже этого объекта не существует");
     }
     [HttpPost]
     public string Update(Product p)
     {
-      var prod = _db.Products.Where(x => x.Id == p.Id).FirstOrDefault();
-      prod = p;
-      //if (prod != null)
-      //{
-      //  _db.Products.Update(prod);
-      //}
-      _db.SaveChanges();
-      return $"Update {prod.Name}";
+      if (p != null)
+      {
+        _db.Products.Update(p);
+        _db.SaveChanges();
+        return $"Update {p.Name}";
+      }
+      else return "Похоже что то пошло не так";
+
     }
     //Add
     [HttpGet]
@@ -60,9 +64,32 @@ namespace NewProject.Controllers
     }
     public string Add(Product p)
     {
-      _db.Products.Add(p);
+      if (p != null)
+      {
+        _db.Products.Add(p);
+        _db.SaveChanges();
+        return "Product added";
+      }
+      else return "Похоже что то пошло не так";
+    }
+    //Delete
+    [HttpGet]
+    public IActionResult Delete(string id)
+    {
+      int a = int.Parse(id);
+      if (a != 0)
+      {
+        ViewBag.ProductId = a;
+        return View(a);
+      }
+      else return NotFound("Похоже этого объекта уже не существует");
+    }
+    [HttpPost]
+    public string Delete(int id)
+    {
+      _db.Products.Remove(_db.Products.Where(x => x.Id == id).FirstOrDefault());
       _db.SaveChanges();
-      return "Product added";
+      return "Product is deleted";
     }
   }
 }

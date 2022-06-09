@@ -12,10 +12,15 @@
         @foreach (var c in Model)
         {
             <tr>
-                <td>@c.CategoryName</td>
-                <td><a href="~/Category/ProductsByCategory/@c.Id">Products</a></td>
+                <td><a asp-action="Update" asp-route-id="@c.Id"> @c.CategoryName</a></td>
+                <td><a asp-action="ProductsByCategory" class="btn btn-outline" asp-route-id="@c.Id">Products</a></td>
+                <td><a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@c.Id">Delete</a></td>
             </tr>
         }
     </table>
+    <br />
+    <br />
+    <a asp-action="Add" class="btn btn-outline-danger">Add</a>
+
 </body>
 </html>

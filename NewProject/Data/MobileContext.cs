@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using NewProject.Models;
 
 namespace NewProject.Data
 {
-  public class MobileContext:DbContext
+  public class MobileContext : IdentityDbContext<AppplicationUser>
   {
     public DbSet<Order> Orders { get; set; }
     public DbSet<Category> Categories { get; set; }
