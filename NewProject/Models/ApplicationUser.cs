@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
+using Microsoft.AspNetCore.Identity;
 
 namespace NewProject.Models
 {
-  public class AppplicationUser : IdentityUser
+  public class ApplicationUser : IdentityUser
   {
     public DateTime BirthDateTime { get; set; }
   }

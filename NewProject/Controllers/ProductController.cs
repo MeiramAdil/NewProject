@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using NewProject.Data;
 using NewProject.Models;
 
@@ -14,7 +16,7 @@ namespace NewProject.Controllers
     }
     public IActionResult Index()
     {
-      var products = _db.Products.ToList();
+      var products = _db.Products.Include(x=>x.category).ToList();
       return View(products);
     }
 
@@ -60,7 +62,7 @@ namespace NewProject.Controllers
     [HttpGet]
     public IActionResult Add()
     {
-      return View();
+      return View(new SelectList(_db.Categories.ToList(), "Id", "CategoryName"));
     }
     public string Add(Product p)
     {

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model SelectList
+@{
 }
 <html>
     <body>
@@ -21,8 +22,9 @@
                     </tr> 
                     <tr>
                         <td>Category id</td>
-                        <td><input type="number" name="CategoryId" placeholder="CategoryId"/></td>
-                    </tr>
+                        <td> @Html.DropDownList("CategoryId",@Model as SelectList)</td>
+@*                       <input type="number" name="CategoryId" placeholder="CategoryId"/>
+*@                    </tr>
                     <tr>
                         <td>
                             <input type="submit" value="Добавить"/>

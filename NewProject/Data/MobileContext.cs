@@ -4,7 +4,7 @@ using NewProject.Models;
 
 namespace NewProject.Data
 {
-  public class MobileContext : IdentityDbContext<AppplicationUser>
+  public class MobileContext : IdentityDbContext<ApplicationUser>
   {
     public DbSet<Order> Orders { get; set; }
     public DbSet<Category> Categories { get; set; }
@@ -13,6 +13,5 @@ namespace NewProject.Data
     {
       Database.EnsureCreated();
     }
-
   }
 }

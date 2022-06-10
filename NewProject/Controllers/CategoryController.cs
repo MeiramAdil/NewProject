@@ -76,6 +76,7 @@ namespace NewProject.Controllers
       }
       else return NotFound("Похоже этого объекта уже не существует");
     }
+    
     [HttpPost]
     public string Delete(int id)
     {

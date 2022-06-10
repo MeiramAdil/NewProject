@@ -8,7 +8,7 @@
         <tr>
             <td>Product name</td>
             <td>Price</td>
-            <td>Category id</td>
+            <td>Category</td>
             <td></td>
         </tr>
         @foreach (var p in Model)
@@ -16,7 +16,7 @@
             <tr>
                 <td><a asp-action="Update" asp-route-id="@p.Id">@p.Name</a></td>
                 <td>@p.Price</td>
-                <td>@p.CategoryId</td>
+                <td>@p.category.CategoryName</td>
                 <td><a asp-action="Buy" class="btn btn-outline-danger" asp-route-id="@p.Id">Buy</a></td>
                 <td><a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@p.Id">Delete</a></td>
             </tr>
